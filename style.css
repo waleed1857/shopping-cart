@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+*******
+*******
+Main container 
+*******
+*******
+*/
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
+/* 
+*******
+*******
+Left Container
+*******
+*******
+*/
+.login {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border: 1px transparent;
+    background-color: rgb(137, 151, 155);
+    width: 50%;
+    height: 100vh;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WjEeg2fkVYish72qZdUsxRVoWxGkIDuJLA&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.login .left-side input {
+    padding: 5px;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.login .left-side p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .left-side #i-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: 10vh;
+    width: 30vw;
+    resize: none;
+    border-radius: 5px;
+}
+
+.btn-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #969696;
+    border-radius: 3px;
+    height: 6vh;
+}
+
+#btn:hover {
+    background-color: #000000;
+}
+
+
+/* 
+*******
+*******
+Right container
+*******
+*******
+*/
+#catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    overflow: auto;
+    border: 1px transparent;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(73, 73, 90);
+    /* background-color: brown; */
+    font-family: 'Times New Roman';
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSskvpee-lJYYM6OW3AeChZDYkSmbFnDt5aJg&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#catalog div {
+    width: 80%;
+    /* Adjust the width to accommodate smaller screens */
+    margin-bottom: 10px;
+    /* Add some margin between items */
+}
+
+/* #content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+} */
+
+@media only screen and (max-width: 768px) {
+    .login .left-side input {
+        width: 40vw;
+    }
+
+    #catalog {
+        width: 50%;
+        /* Adjust the width for smaller screens */
+        padding: 20px;
+        /* Add padding for better spacing */
+    }
+
+    #btn {
+        display: flex;
+        align-items: center;
+    }
+
+    #catalog div {
+        width: 100%;
+        /* Make items occupy full width on smaller screens */
+    }
+}
